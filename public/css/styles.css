@@ -1,40 +1,65 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    height: 100vh; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(216, 154, 154, 0.5); 
+    z-index: -1; 
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .login-container {
     width: 300px;
-    margin: 100px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
 input {
-    width: 100%;
+    width: 70%;
     padding: 8px;
-    margin-bottom: 10px;
+    margin: 10px auto; 
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 button {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     background-color: #007bff;
     border: none;
     color: #fff;
     cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    border-radius: 20px;
 }
 
 button:hover {
@@ -44,4 +69,13 @@ button:hover {
 #message {
     margin-top: 20px;
     text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
 }
