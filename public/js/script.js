@@ -51,7 +51,6 @@ function submitLogin() {
             userInfoBox.style.display = 'block'; 
 
            
-            document.getElementById('status').innerText = `Status: ${data.tu_status}`;
             document.getElementById('displayname_th').innerText = `Name (TH): ${data.displayname_th}`;
             document.getElementById('displayname_en').innerText = `Name (EN): ${data.displayname_en}`;
             document.getElementById('email').innerText = `Email: ${data.email}`;
